@@ -32,7 +32,7 @@ It was a small experiment, but it was exciting to see the functions come togethe
 - Handles some invalid numerical inputs.
 - Allows the user to exit the console by entering `q` at the Gamma Ray prompt.
 
-## Technologies Used
+## Tools Used
 
 - **Python** — programming language.
 - **Jupyter Notebook** — used during my Python learning and practice.
