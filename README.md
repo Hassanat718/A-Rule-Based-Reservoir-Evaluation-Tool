@@ -1,8 +1,10 @@
-# My First Python Project: Rule-Based Reservoir Evaluation Tool
+# My First Python Project: A Rule-Based Reservoir Evaluation Tool
 
-My first real Python project after learning and practising Python in Jupyter Notebook.
+My first small Python application after learning and practising Python in Jupyter Notebook.
 
 This project started as a simple play around with Python. I wanted to see if I could bring a few functions together to create a console that collects well-log values from a user and returns preliminary interpretations based on simple rules.
+
+I used Claude to help create the interactive console from a prompt based on the Python functions I had written. I then ran the program in VS Code.
 
 What began as an experiment became my first small, interactive Python application. I decided to document it here because it marks the beginning of my journey into data science and applying programming to subsurface problems.
 
@@ -17,11 +19,11 @@ The **Rule-Based Reservoir Evaluation Tool** is a beginner-friendly Python conso
 
 It uses predefined conditional rules to return preliminary interpretations of lithology, hydrocarbon potential and possible fluid type.
 
-The console was created using a simple prompt:
+The prompt I used to create the console with Claude was:
 
 > Create a console that collects user inputs and produces outputs using the functions below.
 
-It was a small experiment, but it was exciting to see the functions come together into a program I could run and interact with.
+It was exciting to see the functions come together into a program I could run and interact with.
 
 ## Features
 
@@ -32,29 +34,32 @@ It was a small experiment, but it was exciting to see the functions come togethe
 - Handles some invalid numerical inputs.
 - Allows the user to exit the console by entering `q` at the Gamma Ray prompt.
 
-## Tools Used
+## Technologies and Tools Used
 
-- **Python** — programming language.
-- **Jupyter Notebook** — used during my Python learning and practice.
-- **Python built-in functions and features** — including conditional statements, user input, dictionaries, loops and exception handling.
+- **Python** — the programming language used for the project.
+- **Jupyter Notebook** — where I learnt and practised Python.
+- **Claude** — used to help create the interactive console from my prompt and existing functions.
+- **Visual Studio Code (VS Code)** — used to run the program.
 
-No external Python libraries are required to run the current version.
+The current version uses Python's built-in features and does not require external libraries.
 
 ## What I Learned
 
-Working on this project helped me move from practising Python in Jupyter Notebook to writing code that I could run as a complete, interactive program.
+Working on this project helped me explore how Python functions can be combined into an interactive program.
 
-Through this exercise, I practised:
+Through this exercise, I practised and explored:
 
 - **Python functions:** Breaking the evaluation logic into smaller, reusable functions.
 - **Conditional statements:** Using `if`, `elif` and `else` to apply simple rules to well-log values.
 - **User input:** Collecting GR, RES, NPHI and RHOB values through a console.
 - **Error handling:** Using `try` and `except` to handle invalid numerical inputs.
 - **Loops:** Repeating the evaluation process until the user chooses to exit.
-- **Dictionaries:** Grouping the interpretation results into a single structure.
-- **Problem-solving:** Exploring how Python can be used to represent simplified screening rules for a geoscience problem.
+- **Dictionaries:** Grouping interpretation results into a single structure.
+- **AI-assisted coding:** Exploring how Claude can help turn a prompt and existing functions into a runnable application.
 
-Most importantly, I learned that I do not need to start with a complex project to begin applying programming to my field.
+Most importantly, this project gave me an opportunity to explore how programming can be applied to a problem related to my field of study.
+
+I am still learning, and I look forward to understanding the code more deeply, improving it and building more practical projects.
 
 ## How to Run the Project
 
@@ -113,7 +118,7 @@ Fluid Type       : Possible Gas
 
 ## How the Rules Work
 
-The program uses simple predefined thresholds to generate its results.
+The program uses predefined thresholds to generate its results.
 
 | Function | Purpose |
 |---|---|
@@ -123,30 +128,28 @@ The program uses simple predefined thresholds to generate its results.
 | `Reservoir_evaluation()` | Combines the results of the three evaluation functions. |
 | `run_console()` | Runs the interactive console and displays the results. |
 
-These rules were created as a learning exercise to practise Python logic in a geoscience context.
+These rules are simplified learning criteria. They have not been calibrated or validated against field-specific geological data.
 
 ## Important Limitations
 
-This is a **simple, rule-based learning project**, not a validated petrophysical evaluation tool.
-
-The interpretation thresholds are illustrative and have not been calibrated against field-specific geological data or independently validated results.
+This is a beginner-level, rule-based learning project, not a validated petrophysical evaluation tool.
 
 In actual subsurface work:
 
 - Gamma Ray responses depend on lithology, mineralogy and local formation characteristics.
-- Resistivity must be interpreted in context; high resistivity does not automatically indicate hydrocarbons.
+- High resistivity does not automatically indicate hydrocarbons.
 - Fluid interpretation requires consideration of lithology, porosity, formation water properties, borehole conditions and other relevant information.
-- Reliable petrophysical evaluation involves appropriate quality control, calibrated parameters and integration of available subsurface data.
+- Reliable petrophysical evaluation requires appropriate quality control, calibrated parameters and integration of available subsurface data.
 
-The outputs should therefore be treated as preliminary screening indications, not definitive identification of reservoir lithology or fluid type. This program should not be used to make operational or field-development decisions.
+The outputs should therefore be treated as preliminary screening indications, not definitive identification of reservoir lithology or fluid type. The program should not be used to make operational or field-development decisions.
 
 ## Future Improvements
 
 As I continue learning Python and data science, I would like to explore ways to improve this project, including:
 
-- Improving input validation and handling unrealistic or out-of-range values.
-- Reviewing and refining the interpretation rules with appropriate petrophysical guidance.
-- Extending the program to evaluate multiple depth intervals from a well-log dataset.
+- Improving input validation and error handling.
+- Refining the interpretation rules with appropriate petrophysical guidance.
+- Extending the tool to evaluate multiple depth intervals from a well-log dataset.
 - Reading LAS files using Python.
 - Using Pandas for well-log data handling and quality control.
 - Visualising well logs and interpreted intervals using Plotly.
@@ -172,3 +175,5 @@ Thank you for taking the time to explore my first project!
 ---
 
 *This repository documents my learning journey. The code and interpretation rules may evolve as I gain more experience in Python, data science and petrophysical evaluation.*
+
+**One project at a time. One step at a time.**
